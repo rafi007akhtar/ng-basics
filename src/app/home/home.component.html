@@ -43,3 +43,8 @@ I'm {{ secretIdentity }} !  <!-- property binding -->
 
 </form>
 
+<h2>Echo</h2>
+<!-- Two-way data binding is done with the use of [(ngModel)] -->
+<input placeholder="Say something" [(ngModel)]="echo">
+<p>You said: {{ echo }}</p>
+

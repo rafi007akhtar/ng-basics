@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   namePh: string = "Enter your name";
   need: boolean = true;
   noneed: boolean = false;
+  echo: string = "";
 
   submit() {
     alert("Cool!");
