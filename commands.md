@@ -22,3 +22,9 @@ This MD file contains a list of all the angular commands I have used from time t
     ng serve
     ```
 
+- Create a new component
+	```sh
+	cd src/app  # navigate to the app directory, then enter:
+	ng generate component comp  # replace 'comp' by your component name
+	```
+
