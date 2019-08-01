@@ -1,0 +1,45 @@
+<p>home works!</p>
+<ng-content></ng-content> <!-- import all code from root -->
+
+<br> <br>
+
+You wanna know my secret identity? <br>
+I'm {{ secretIdentity }} !  <!-- property binding -->
+
+<h2>Form</h2>
+
+<form>
+	<!-- 
+		Data binding
+		----------------
+		Synatx:
+		<tag attribute = {{ placeholder-variable }}>
+		The placeholder-variable is defined inside the Component class
+	-->
+	<input placeholder="{{ namePh }}" required="{{ need }}">  <!-- Example of data binding-->
+
+	<br>
+
+	 <!-- 
+		Property binding
+		----------------
+		Syntax:
+		<tag [attribute]="placeholder-varaible">
+		The placeholder-variable is defined inside the Component class
+	-->
+	<input placeholder="Enter your designation" [required]="noneed">
+
+	<br>
+
+	<!-- 
+		Event binding
+		-------------
+		Syntax:
+		<tag (event)="handler">
+		The handler function is defined in the Component class
+	-->
+
+	<input type="button" (click)="submit();" value="Click me">
+
+</form>
+
