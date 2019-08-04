@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +17,8 @@ export class HomeComponent implements OnInit {
   submit() {
     alert("Cool!");
   }
+
+  @Input() color;  // import the color property from app-root as property binding
   
   constructor() { }
 
