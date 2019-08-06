@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +19,11 @@ export class HomeComponent implements OnInit {
   }
 
   @Input() color;  // import the color property from app-root as property binding
+
+  @Output() onYell = new EventEmitter();
+  yell(e) {
+    this.onYell.emit(e);
+  }
   
   constructor() { }
 

@@ -31,5 +31,5 @@
 </header>
 
 <section id="main">
-  <app-home [color]="color">Root works!</app-home> <!-- import all code from home.component.html -->
+  <app-home [color]="color" (onYell)="yell($event);">Root works!</app-home> <!-- import all code from home.component.html -->
 </section>

@@ -14,4 +14,9 @@ export class AppComponent {  // export means the `class` is available outside of
     code: "#ff0000"
   }
   // the above variable will be passed as property to the `<app-home>` tag in app.component.html
+
+  // the following function is for custom event binding
+  yell(e) {
+    alert("Yaba Daba Dooooo!");
+  }
 }
