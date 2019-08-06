@@ -31,5 +31,10 @@
 </header>
 
 <section id="main">
-  <app-home [color]="color" (onYell)="yell($event);">Root works!</app-home> <!-- import all code from home.component.html -->
+  <!-- import all code from home.component.html -->
+  <app-home [color]="color" (onYell)="yell($event);">Root works!</app-home> 
+
+  <!-- Uncomment the following line to enable routing to ./directory -->
+  <!-- <router-outlet></router-outlet> -->
+
 </section>
