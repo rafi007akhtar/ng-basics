@@ -25,6 +25,9 @@ This MD file contains a list of all the angular commands I have used from time t
 - Create a new component
 	```sh
 	cd src/app  # navigate to the app directory, then enter:
-	ng generate component comp  # replace 'comp' by your component name
+	ng generate component comp  # replace 'comp' by with component name
+
+	# OR use this shorthand:
+	ng g c comp  # replace 'comp' with component name
 	```
 
