@@ -6,6 +6,7 @@ import { HomeComponent } from "./home/home.component";
 
 const routes: Routes = [
   { path: "directory", component: DirectoryComponent },
+  { path: "directory/:name", component: DirectoryComponent},
   { path: "", component: HomeComponent }
 ];
 

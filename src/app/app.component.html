@@ -24,17 +24,17 @@
   <h1>{{title}}</h1>
   <nav>
     <ul>
-      <li>link</li>
-      <li>link</li>
+      <li><a [routerLink]='["/"]'>Home</a></li>
+      <li><a [routerLink]='["/directory"]'>Directory</a></li>
     </ul>
   </nav>
 </header>
 
 <section id="main">
   <!-- import all code from home.component.html -->
-  <app-home [color]="color" (onYell)="yell($event);">Root works!</app-home> 
+  <!-- <app-home [color]="color" (onYell)="yell($event);">Root works!</app-home>  -->
 
-  <!-- Uncomment the following line to enable routing to ./directory -->
-  <!-- <router-outlet></router-outlet> -->
+  <!-- The following line is to enable routing to ./directory -->
+  <router-outlet></router-outlet>
 
 </section>

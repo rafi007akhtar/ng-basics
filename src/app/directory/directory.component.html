@@ -1,1 +1,33 @@
+<style>
+	.name {
+		font-weight: 900;
+		color: darkred;
+		text-decoration: underline;
+	}
+	.bluebg {
+		background-color: blue;
+	}
+
+	.b {
+		font-weight: bold;
+	}
+	.em {
+		font-style: italic;
+	}
+	.u {
+		text-decoration: underline;
+	}
+</style>
+
 <p>directory works!</p>
+
+<!-- 
+	The following line implements:
+	* string interpolation
+	* route params
+	* attribute directive
+ -->
+My name is <span [ngClass]="{'name': true, 'bluebg': false}">{{ name }}</span>.
+
+<!-- Attribute Directive in the following line. The variable `bem` is taken from directory.component.ts -->
+<p [ngClass]="bem">This text applies the "bem" classes</p>
