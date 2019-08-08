@@ -31,3 +31,10 @@ My name is <span [ngClass]="{'name': true, 'bluebg': false}">{{ name }}</span>.
 
 <!-- Attribute Directive in the following line. The variable `bem` is taken from directory.component.ts -->
 <p [ngClass]="bem">This text applies the "bem" classes</p>
+
+<p *ngIf="showText">This text might or might not appear at every reload, depending on its probability.</p>
+
+<h2>Justice League</h2>
+<ol>
+	<li *ngFor="let leaguer of league">{{  leaguer }}</li>
+</ol>
