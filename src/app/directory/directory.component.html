@@ -35,6 +35,7 @@ My name is <span [ngClass]="{'name': true, 'bluebg': false}">{{ name }}</span>.
 <p *ngIf="showText">This text might or might not appear at every reload, depending on its probability.</p>
 
 <h2>Justice League</h2>
+<input type="text" placeholder="Search for a Leaguer" [(ngModel)]="leaguer">
 <ol>
-	<li *ngFor="let leaguer of league">{{  leaguer }}</li>
+	<li *ngFor="let leaguer of league | filter:leaguer">{{  leaguer | titlecase }}</li>
 </ol>

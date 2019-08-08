@@ -8,12 +8,14 @@ import { FormsModule }   from '@angular/forms';
 import { DirectoryComponent } from './directory/directory.component';
 
 import { APP_ROUTES_PROVIDER } from "./app-routing.module";
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DirectoryComponent
+    DirectoryComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
