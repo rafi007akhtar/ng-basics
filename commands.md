@@ -31,3 +31,12 @@ This MD file contains a list of all the angular commands I have used from time t
 	ng g c comp  # replace 'comp' with component name
 	```
 
+- Create a custom pipe
+	```sh
+	cd src/app  # navigate to the app directory, then enter:
+	ng generate pipe pipename
+
+	# OR use this shorthand:
+	ng g pipe pipename
+	```
+

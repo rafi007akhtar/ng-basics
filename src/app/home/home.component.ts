@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { BClickService } from "../b-click.service"
 
 @Component({
   selector: 'app-home',
@@ -25,7 +26,11 @@ export class HomeComponent implements OnInit {
     this.onYell.emit(e);
   }
   
-  constructor() { }
+  constructor(private clicker: BClickService) { }
+
+  clicked() {
+    this.clicker.clicked();
+  }
 
   ngOnInit() {
   }

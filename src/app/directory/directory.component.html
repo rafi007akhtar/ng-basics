@@ -39,3 +39,5 @@ My name is <span [ngClass]="{'name': true, 'bluebg': false}">{{ name }}</span>.
 <ol>
 	<li *ngFor="let leaguer of league | filter:leaguer">{{  leaguer | titlecase }}</li>
 </ol>
+
+<button (click)="clicked()">Click me!</button>

@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
+import { BClickService } from "../b-click.service"
 
 @Component({
   selector: 'app-directory',
   templateUrl: './directory.component.html',
-  styleUrls: ['./directory.component.css']
+  styleUrls: ['./directory.component.css'],
+  providers: [BClickService]
 })
 export class DirectoryComponent implements OnInit {
   name: string;
@@ -15,8 +17,12 @@ export class DirectoryComponent implements OnInit {
   
   league = ["superman", "batman", "wonder woman", "the flash", "martian manhunter", "green lantern", "hawkgirl"];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private bclick: BClickService) {
     this.name = route.snapshot.params["name"];
+  }
+
+  clicked() {
+    this.bclick.clicked();
   }
 
   ngOnInit() {
